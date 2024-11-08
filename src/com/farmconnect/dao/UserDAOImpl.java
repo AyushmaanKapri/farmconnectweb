@@ -23,7 +23,6 @@ public class UserDAOImpl implements UserDAO {
 
             statement.executeUpdate();
         } catch (SQLException e) {
-            e.printStackTrace();
         }
     }
 
@@ -48,7 +47,6 @@ public class UserDAOImpl implements UserDAO {
                 );
             }
         } catch (SQLException e) {
-            e.printStackTrace();
         }
         return user;
     }
@@ -72,7 +70,6 @@ public class UserDAOImpl implements UserDAO {
                 ));
             }
         } catch (SQLException e) {
-            e.printStackTrace();
         }
         return users;
     }
@@ -92,7 +89,7 @@ public class UserDAOImpl implements UserDAO {
 
             statement.executeUpdate();
         } catch (SQLException e) {
-            e.printStackTrace();
+
         }
     }
 
@@ -105,7 +102,7 @@ public class UserDAOImpl implements UserDAO {
             statement.setInt(1, id);
             statement.executeUpdate();
         } catch (SQLException e) {
-            e.printStackTrace();
+
         }
     }
 }

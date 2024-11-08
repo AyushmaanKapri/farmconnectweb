@@ -8,14 +8,13 @@ public class User {
     private String userType;
     private String mobile;
 
-    // Constructor
     public User(int id, String username, String name, String password, String userType, String mobile) {
         this.id = id;
         this.username = username;
-        this.name = (name != null && !name.isEmpty()) ? name : "Unknown";  // Default to 'Unknown' if name is not provided
+        this.name = (name != null && !name.isEmpty()) ? name : "Unknown";
         this.password = password;
-        this.userType = (userType != null && !userType.isEmpty()) ? userType : "consumer";  // Default to 'consumer'
-        this.mobile = (mobile != null && !mobile.isEmpty()) ? mobile : "0000000000";  // Default to '0000000000'
+        this.userType = (userType != null && !userType.isEmpty()) ? userType : "consumer";
+        this.mobile = (mobile != null && !mobile.isEmpty()) ? mobile : "0000000000";
     }
 
     // Getters and setters
