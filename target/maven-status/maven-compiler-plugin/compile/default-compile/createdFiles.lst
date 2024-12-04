@@ -1,0 +1,10 @@
+com\ms\farmconnect\Dao\UserDAO.class
+com\ms\farmconnect\JakartaRestConfiguration.class
+com\ms\farmconnect\Servlet\LoginServlet.class
+com\ms\farmconnect\models\User.class
+com\ms\farmconnect\Servlet\Logout.class
+com\ms\farmconnect\Dao\UserDaoImp.class
+com\ms\farmconnect\Servlet\RegisterServlet.class
+com\ms\farmconnect\Util\DBConnection.class
+com\ms\farmconnect\Util\DBCheck.class
+com\ms\farmconnect\resources\JakartaEE11Resource.class

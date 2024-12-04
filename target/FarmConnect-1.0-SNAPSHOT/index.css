@@ -1,0 +1,73 @@
+/* General Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #add8e6; /* Light Blue */
+}
+
+/* Card Container */
+.card {
+    width: 100%;
+    max-width: 500px;
+    border: none; /* Removes card border */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+    background-color: #fff; /* White background for card */
+}
+
+/* Card Hover Effect */
+.card:hover {
+    transform: translateY(-10px); /* Moves the card up when hovered */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Adds a shadow on hover */
+}
+
+/* Card Body Padding */
+.card-body {
+    padding: 40px;
+}
+
+/* Floating Label Styles */
+.form-floating {
+    position: relative;
+}
+
+.form-floating input {
+    padding: 1rem 0.75rem;
+    height: calc(3rem + 2px);
+    font-size: 1rem;
+}
+
+.form-floating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem 0.75rem;
+    pointer-events: none;
+    transition: 0.2s ease-in-out;
+    font-size: 1rem;
+}
+
+/* When input is focused or filled, move the label up */
+.form-floating input:focus,
+.form-floating input:not(:placeholder-shown) {
+    padding-top: 1.75rem;
+}
+
+.form-floating input:focus ~ label,
+.form-floating input:not(:placeholder-shown) ~ label {
+    font-size: 0.75rem;
+    top: -0.5rem;
+    left: 0.75rem;
+    color: #495057;
+}
+
+/* For small screens */
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 100%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adds shadow for small screens */
+        transition: box-shadow 0.3s ease; /* Smooth transition for shadow */
+    }
+    
+    .card:hover {
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Hover shadow effect */
+    }
+}

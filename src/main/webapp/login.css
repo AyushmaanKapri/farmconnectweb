@@ -1,0 +1,83 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #87ceeb, #ffffff); /* Sky Blue to White */
+}
+
+.card {
+    width: 100%;
+    max-width: 600px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    padding: 40px;
+}
+
+.left-box {
+    background: #103cbe;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.featured-image img {
+    width: 250px;
+}
+
+.form-floating {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.form-floating input {
+    padding: 1rem 0.75rem;
+    font-size: 1rem;
+    height: calc(3rem + 2px);
+}
+
+.form-floating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem 0.75rem;
+    pointer-events: none;
+    transition: 0.2s ease-in-out;
+    font-size: 1rem;
+}
+
+.form-floating input:focus,
+.form-floating input:not(:placeholder-shown) {
+    padding-top: 1.75rem;
+}
+
+.form-floating input:focus ~ label,
+.form-floating input:not(:placeholder-shown) ~ label {
+    font-size: 0.75rem;
+    top: -0.5rem;
+    left: 0.75rem;
+    color: #495057;
+}
+
+.btn-primary {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 0.75rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 90%;
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,64 @@
+/* General Styles */
+body {
+font-family: Arial, sans-serif;
+background-color: #f4f4f4;
+color: #333;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+/* Container Styles */
+.container {
+text-align: center;
+background: white;
+padding: 30px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+max-width: 400px;
+width: 90%;
+}
+
+/* Heading Styles */
+h1 {
+font-size: 2.5em;
+color: #28a745;
+margin-bottom: 10px;
+}
+
+h3 {
+font-size: 1.2em;
+color: #555;
+margin-bottom: 20px;
+}
+
+/* Links Section */
+.links {
+margin-top: 20px;
+}
+
+.links a {
+text-decoration: none;
+color: white;
+background-color: #28a745;
+padding: 10px 20px;
+margin: 5px;
+border-radius: 5px;
+display: inline-block;
+font-size: 1em;
+transition: background-color 0.3s ease;
+}
+
+.links a:hover {
+background-color: #1e7e34;
+}
+
+/* Footer */
+footer {
+margin-top: 20px;
+font-size: 0.9em;
+color: #777;
+}
